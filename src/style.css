@@ -44,7 +44,7 @@ h1 {
     color: rgb(10, 61, 33);;
 }
 html {
-  background-image: url(./background.avif);
+  background-image: url(../images/background.avif);
   background-size: cover;
 }
 
