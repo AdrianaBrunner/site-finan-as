@@ -1,6 +1,7 @@
 
 const form = document.querySelector("form");
 const lista = document.getElementById("lista")
+//const card = document.getElementsByClassName("card");
 
 let transacoes = JSON.parse(localStorage.getItem("transacoes")) || [];
 
@@ -25,8 +26,10 @@ function mostrar() {
         lista.appendChild(itemLista);
         if(transacao.selected == "Receita") {
             itemLista.style.color = "green";
+            let valorReceita = transacao.valorFormatado;
         } else {
             itemLista.style.color = "red";
+            let valorDespesa = transacao.valorFormatado;
         }
     })
 }
